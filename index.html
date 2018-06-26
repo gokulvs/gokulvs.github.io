@@ -3,6 +3,7 @@
 
 <head>
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Arapey|Archivo+Black|Elsie+Swash+Caps|Playfair+Display|Anton|Rubik|Teko:600|Sacramento|Abril+Fatface|Cormorant+Garamond|Neucha|Unica+One|Old+Standard+TT" rel="stylesheet">
     <style>
         body {
             /*background: url('flower.png') no-repeat center center fixed;*/
@@ -15,7 +16,10 @@
             right: 100px;
             top: 10px;
             letter-spacing: 43px;
-            font-family: 'Indie Flower', cursive;
+            /*font-family: 'Indie Flower', cursive;*/
+            font-family: 'Sacramento', serif;
+            font-weight: 400;
+            font-size: 12vw;
         }
         
         span.cursor-blink {
@@ -103,13 +107,26 @@
             text-decoration: none;
             font-size: 13px;
             z-index: 999;
+            color:#000;
+        }
+        .small-icon{
+            width:30px;
+            position: fixed;
+            right: 50px;
+            top: 54px;
         }
     </style>
+       <script src="https://cdn.rawgit.com/icons8/titanic/master/dist/js/titanic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.5.9/bodymovin.min.js"></script>
 </head>
 
 <body>
-    <span class="cursor-blink">gokul</span>
-    <a href="gokul_resume.pdf">Resume</a>
+    <span class="cursor-blink">Gokul</span>
+    
+    <a href="gokul_resume.pdf">
+        <div class="titanic titanic-install small-icon">
+        </div>
+    </a>
     <div class="image-wrapper">
         <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
             xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="350mm" height="297mm" viewBox="0 0 210 297" version="1.1" id="svg8" inkscape:version="0.92.3 (2405546, 2018-03-11)" sodipodi:docname="circles.svg">
@@ -181,6 +198,7 @@
 
     </div>
 
+ 
     <script type="text/javascript">
         ["https://raw.githubusercontent.com/julianshapiro/velocity/master/velocity.min.js"].map(url => fetch(url)
             .then(response => response.text()).then(function(text) {
@@ -221,6 +239,12 @@
 
             });
         }, 800);
+
+        // titanic icons
+        var titanic = new Titanic({
+          hover: true, // auto animated on hover (default true)
+          click: true  // auto animated on click/tap (default false)
+        });
     </script>
 </body>
 
